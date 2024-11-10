@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of getElementsByClassName</title>
+</head>
+<body>
+    <div class="section">First section</div>
+    <div class="section">Second section</div>
+    <div class="section">Third section</div>
+
+    <script>
+        const sections = document.getElementsByClassName("section");
+        console.log(sections.length);
+
+        for (let i = 0; i < sections.length; i++) {
+            // sections[i].style = "color:red; font-size:25px;"
+            if(i == 1){
+                sections[i].style = "color:green; font-size:25px;"
+            } else {
+                sections[i].style = "color:red; font-size:25px;"
+            }
+        }
+    </script>
+</body>
+</html>
